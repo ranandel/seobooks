@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+}
+/*ШАПКА*/
+.header_block{
+    background-image: url(images/bg-header.png);
+    height: 120px;
+}
+header{
+    height: 90px;
+    max-width: 75%;
+    margin-left:12.5%;
+    margin-right:12.5%;
+}
+/*РЕКЛАМА*/
+.adv{
+    width: 480px;
+    height: 70px;
+    float: right;
+    margin-top: 7px;
+}
+/*МЕНЮ*/
+menu{
+    height: 30px;
+    max-width: 75%;
+    margin-left:12.5%;
+    margin-right:12.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+menu ul{
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+    padding: 5px 0px;
+}
+menu li{
+    list-style: none;
+    display: inline;
+    padding: 0px 7px;
+}
+menu li a {
+    font: 13px tahoma, sans-serif;
+    text-shadow:1px 1px 1px #376603;
+    text-decoration: none;
+    color: white;
+}
+menu li a:active{
+    color: yellow;
+}
+menu li a:hover{
+    color: yellow;
+}
+/*КОНТЕНТ*/
+.content_block{
+    display: inline-flex;
+
+    height: 500px;
+    max-width: 75%;
+    margin-left:12.5%;
+    margin-right:12.5%;
+}
+.left{
+    display: block;
+    background: #e8e8e8;
+    width: 200px;
+}
+.right{
+    display: block;
+    background: blue;
+    width: 200px;
+}
+.content{
+    margin: 0px 10px;
+    display: block;
+    background: gray;
+    width: 600px;
+}
