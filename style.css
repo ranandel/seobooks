@@ -55,25 +55,90 @@ menu li a:hover{
 /*КОНТЕНТ*/
 .content_block{
     display: inline-flex;
-
     height: 500px;
     max-width: 75%;
     margin-left:12.5%;
     margin-right:12.5%;
+    margin-top: 10px;
 }
+/*ЛЕВАЯ КОЛОНКА*/
 .left{
     display: block;
-    background: #e8e8e8;
     width: 200px;
+    font: 14px Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact,sans-serif;
+
 }
-.right{
+.statistika{
+    width: 200px;
+    background-image: url(images/reg-vhod-st1.png);
+    height: 40px;
+    background-position: 0 -160px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #008000;
+    padding-top: 3px;
+}
+.reg{
+   background-image: url(images/reg-vhod-st1.png);
+    height: 40px;
+    margin-bottom: 5px;
+}
+.reg:hover{
+    background-position: 0 -40px;
+}
+.login{
+    background-image: url(images/reg-vhod-st1.png);
+    height: 40px;
+    background-position: 0 -80px;
+    margin-bottom: 15px;
+}
+.login:hover{
+    background-position: 0 -120px;
+}
+.baner{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    height: 190px;
+    border-radius: 6px;
+}
+.baner h1{
+    font-weight: normal;
+    background: -webkit-linear-gradient(top, #FFFFFF 0px, #E4E4E4 100%);
+    font-size: 14px;
+    padding: 7px 0px;
+    color: #27A011;
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
+}
+.baner_content{
+    height: 111px;
+    text-align: center;
     display: block;
-    background: blue;
-    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 8px;
 }
+.ref{
+    text-align: center;
+    color: #135b11;
+}
+.ref a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #135b11;
+}
+.ref a:hover {
+    color: #E57C00;
+}
+/*СРЕДНЯЯ КОЛОНКА*/
 .content{
     margin: 0px 10px;
     display: block;
     background: gray;
     width: 600px;
+}
+/*ПРАВАЯ КОЛОНКА*/
+.right{
+    display: block;
+    background: blue;
+    width: 200px;
 }
