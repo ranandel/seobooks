@@ -1,19 +1,82 @@
 body{
     margin: 0;
 }
+/*ЛЮДЕЙ ОНЛАЙН*/
+.online{
+    background: url(/images/online.png);
+    color: #fff;
+    width: 113px;
+    height: 37px;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 1000;
+    right: -39px;
+    top: 400px;
+    cursor: help;
+    transform: rotate(270deg);
+}
+.online span{
+    margin:0;
+    font-family: Arial, Tahoma, "Times New Roman", "Trebuchet MS", Impact, sans-serif;
+    font-size: 23px;
+    margin-right: -18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+/*ПОМОЩЬ И ТЕХПОДДЕРЖКА*/
+.help{
+    height: 17px;
+    top: 300px;
+    z-index: 1000;
+    position: fixed;
+    left: -40px;
+    line-height: 17px;
+    padding: 10px;
+    background: #38A247;
+    transform: rotate(90deg);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Tahoma, "Comic Sans MS", "Monaco CY", cursive;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .5), 0 2px 3px rgba(0, 0, 0, .5);
+    border-radius: 7px 7px 0 0;
+    border: 2px solid #ffffff;
+}
+.help a{
+    text-decoration: none;
+    color: #FFE419;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.56);
+}
+.help:hover{
+    background: #007F0E;
+}
+.help .x{
+    color: #e32636;
+    cursor: pointer;
+    font-size: 12px;
+}
+#support{
+    top: 450px;
+    left: -65px;
+}
+#support a{
+    color: white;
+}
 /*ШАПКА*/
 .header_block{
     background-image: url(images/bg-header.png);
     height: 120px;
 }
-header{
+/*ЛОГОТИП*/
+.header_block header{
     height: 90px;
     max-width: 75%;
     margin-left:12.5%;
     margin-right:12.5%;
 }
 /*РЕКЛАМА*/
-.adv{
+.header_block header .adv{
     width: 480px;
     height: 70px;
     float: right;
@@ -52,10 +115,10 @@ menu li a:active{
 menu li a:hover{
     color: yellow;
 }
-/*КОНТЕНТ*/
+/*КОНТЕНТ БЛОК 3 колонки*/
 .content_block{
     display: inline-flex;
-    height: 500px;
+
     max-width: 75%;
     margin-left:12.5%;
     margin-right:12.5%;
@@ -66,11 +129,11 @@ menu li a:hover{
     display: block;
     width: 200px;
     font: 14px Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact,sans-serif;
-
 }
-.statistika{
+/*СТАТИСТИКА*/
+.left .statistika{
     width: 200px;
-    background-image: url(images/reg-vhod-st1.png);
+    background-image: url(images/reg_log_bg.png);
     height: 40px;
     background-position: 0 -160px;
     margin-bottom: 5px;
@@ -79,29 +142,36 @@ menu li a:hover{
     color: #008000;
     padding-top: 3px;
 }
-.reg{
-   background-image: url(images/reg-vhod-st1.png);
+.left .statistika .st{
+    color: #ff8000;
+    font-size: 14px;
+}
+/*РЕГИСТРАЦИЯ*/
+.left .reg{
+   background-image: url(images/reg_log_bg.png);
     height: 40px;
     margin-bottom: 5px;
 }
-.reg:hover{
+.left .reg:hover{
     background-position: 0 -40px;
 }
-.login{
-    background-image: url(images/reg-vhod-st1.png);
+/*ВХОД*/
+.left .login{
+    background-image: url(images/reg_log_bg.png);
     height: 40px;
     background-position: 0 -80px;
     margin-bottom: 15px;
 }
-.login:hover{
+.left .login:hover{
     background-position: 0 -120px;
 }
-.baner{
+/*БАНЕР 100х100*/
+.left .baner{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     height: 190px;
     border-radius: 6px;
 }
-.baner h1{
+.left .baner h1{
     font-weight: normal;
     background: -webkit-linear-gradient(top, #FFFFFF 0px, #E4E4E4 100%);
     font-size: 14px;
@@ -110,35 +180,104 @@ menu li a:hover{
     text-align: center;
     border-radius: 6px 6px 0px 0px;
 }
-.baner_content{
+.left .baner_content{
     height: 111px;
     text-align: center;
     display: block;
     padding-bottom: 10px;
     padding-top: 8px;
 }
-.ref{
+.banner_bt{
     text-align: center;
     color: #135b11;
 }
-.ref a{
+.banner_bt a{
     font-size: 11px;
     text-decoration: none;
     color: #135b11;
 }
-.ref a:hover {
+.banner_bt a:hover {
     color: #E57C00;
 }
 /*СРЕДНЯЯ КОЛОНКА*/
 .content{
     margin: 0px 10px;
     display: block;
-    background: gray;
     width: 600px;
+
+}
+.zagolovok{
+    font-weight: normal;
+    background: -webkit-linear-gradient(top, #FFFFFF 0px, #E4E4E4 100%);
+    font-size: 14px;
+    padding: 5px 0px;
+    color: #27A011;
+    text-align: center;
+    margin:0;
+    font-family: Tahoma, Arial, "Times New Roman", Times, serif;
+}
+.name_block{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 6px 6px 0px 0px;
+    padding: 5px 0 5px 0;
+}
+.content .content_zagolovok{
+    color: #ffffff;
+    background: #F7931A;
+    margin: 10px 10px;
+    padding: 10px 0px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.56);
+    font-size: 12px;
+    text-align: center;
+}
+.content span{
+    color: #00915E;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .content_text{
+    padding: 5px 10px 5px 20px;
+    color: #006699;
+    font-size: 14px;
+}
+.content .big_img{
+    width: 64px;
+    height: 64px;
+}
+.content_text .hochy{
+    display: inline-block;
+    min-width: 180px;
+    line-height: 40px;
+    padding: 0 25px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.56);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 1px 0 rgba(255,255,255,0.15) inset;
+    background: linear-gradient(to bottom, #42ba47 0%,#4caf50 100%);
+    border-color: #49aa20 #439e1c #3b9017 #439e1c;
 }
 /*ПРАВАЯ КОЛОНКА*/
 .right{
     display: block;
-    background: blue;
     width: 200px;
+}
+.link{
+    height: 400px;
+    padding: 7px;
+    font: 14px Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact,sans-serif;
+}
+#link_bt{
+    font: 14px Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact,sans-serif;
+}
+.right hr{
+    border: 0;
+    height: 1px;
+    background-color: #CCC;
+}
+.adv_right{
+    height: 200px;
 }
