@@ -1,13 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <title>ProfiTCentR - Рекламное агентство. Эффективная раскрутка сайтов</title>
     <link rel="icon" href="/favicon.ico">
     <script src="script.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<!--КНОПКА ВВЕРХ-->
+<div class="up" title="Наверх">
+    <img src="images/up.png">
+</div>
+<!--КНОПКА ВНИЗ-->
+<div class="down" title="Вниз">
+    <img src="images/down.png">
+</div>
 <!--ЛЮДЕЙ ОНЛАЙН-->
 <div class="online" title="Сколько человек онлайн">
     <span>1</span>
@@ -76,6 +86,14 @@
             <div class="banner_bt">
             <a href="#">Разместить</a>  | <a href="#">Смотреть все</a>
             </div>
+        </div>
+<!--ДАТА И ВРЕМЯ-->
+        <div id="date" class="data">
+            <script>
+                setInterval(function () {
+                    document.getElementById('date').innerHTML = date_time();
+                }, 1000);
+            </script>
         </div>
     </div>
 <!--СРЕДНЯЯ КОЛОНКА-->
@@ -238,7 +256,7 @@
                 <br><br><br><hr>
             </div>
             <div class="banner_bt" id="link_bt">
-                <a href="#">Разместить</a>  | <a href="#">Смотреть все</a>
+                <a href="#">Разместить ссылку</a>  | <a href="#">Смотреть все</a>
             </div>
         </div>
         <br>
@@ -247,5 +265,14 @@
 </div>
     </div>
 </div>
+<!--ФУТЕР-->
+<footer>
+    <div class="schetchik" title="Здесь находится аттестат нашего WM идентификатора">
+        <a href="#"> <img src="images/webmoney.png"" ></a>
+    </div>
+    <div class="textf">
+        <a href="#" >Админкоманда</a>  &nbsp;|&nbsp;  <a href="#" >Техподдержка</a>  &nbsp;|  &nbsp; <a href="#" >Черный список</a>  &nbsp;|&nbsp;   <a href="#" >Контакты</a>  &nbsp;|  &nbsp; <a href="#" >© 2021-2021 Сайт</a>
+    </div>
+</footer>
 </body>
 </html>
