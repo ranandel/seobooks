@@ -84,5 +84,55 @@ catch(e)
 catch(e)
 {   try { return new ActiveXObject('Microsoft.XMLHTTP') }
 catch(e) { return null; }   } } }
-
-
+//ERN.PHP КНОПКИ
+function login() {
+    var a = document.getElementById("login");
+    var b = document.getElementById("wm");
+    var c = document.getElementById("pass");
+    var log1 = document.getElementById("login_block1");
+    var log2 = document.getElementById("login_block2");
+    var log3 = document.getElementById("login_block3");
+    a.style.backgroundImage= "linear-gradient(to bottom, #fefefe, #eeeeee)";
+    a.style.color="#434248";
+    b.style.backgroundImage= "none";
+    c.style.backgroundImage= "none";
+    b.style.color="white";
+    c.style.color="white";
+    log1.style.display="block"
+    log2.style.display="none"
+    log3.style.display="none"
+}
+function wm() {
+    var a = document.getElementById("login");
+    var b = document.getElementById("wm");
+    var c = document.getElementById("pass");
+    var log1 = document.getElementById("login_block1");
+    var log2 = document.getElementById("login_block2");
+    var log3 = document.getElementById("login_block3");
+    b.style.backgroundImage= "linear-gradient(to bottom, #fefefe, #eeeeee)";
+    a.style.backgroundImage= "none";
+    c.style.backgroundImage= "none";
+    b.style.color="#434248";
+    a.style.color="white";
+    c.style.color="white";
+    log1.style.display="none"
+    log2.style.display="block"
+    log3.style.display="none"
+}
+function pass() {
+    var a = document.getElementById("login");
+    var b = document.getElementById("wm");
+    var c = document.getElementById("pass");
+    var log1 = document.getElementById("login_block1");
+    var log2 = document.getElementById("login_block2");
+    var log3 = document.getElementById("login_block3");
+    c.style.backgroundImage= "linear-gradient(to bottom, #fefefe, #eeeeee)";
+    a.style.backgroundImage= "none";
+    b.style.backgroundImage= "none";
+    c.style.color="#434248";
+    a.style.color="white";
+    b.style.color="white";
+    log1.style.display="none"
+    log2.style.display="none"
+    log3.style.display="block"
+}

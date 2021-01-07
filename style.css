@@ -268,7 +268,7 @@ menu li a:hover{
     width: 64px;
     height: 64px;
 }
-.content_text .hochy{
+.hochy{
     display: inline-block;
     min-width: 180px;
     line-height: 40px;
@@ -346,22 +346,70 @@ footer .textf a{
     height: 25px;
     padding: 4px;
 }
+.zag{
+    color: #C80000;
+    font-weight: bold;
+}
 label {
-    color: #434248;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-
+    color: white;
     text-align: center;
     float: left;
     line-height: 25px;
     width: 33%;
     cursor: pointer;
+    font-family: Arial;
 }
 label img{
     height: 18px;
     width: 18px;
 }
-label:focus{
-    background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+label:first-child{
+    background-Image:linear-gradient(to bottom, #fefefe, #eeeeee);
+    color:#434248;
+}
+.login_block1 table{
+    width: 100%;
+    color:  #167E48;
+    font-family: Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px, rgb(170, 170, 170) 1px 2px 2px;
+}
+.login_block1 td:first-child{
+    width: 100px;
+}
+.login_block1 .refresh{
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+.login_block1 input{
+    height: 21px;
+   float: right;
+    width: 290px;
+    border: 1px solid  #D3D3D3;
+    padding: 3px 5px 3px 5px;
+    margin: 10px 0px 10px 0px;
+}
+.login_block1 hr{
+    width: 100%;
+
+}
+.login_block1 .capcha{
+    display: flex;
+    justify-content: space-around;
+}
+.login_block1 .capcha div{
+    width: 75px;
+    height: 75px;
+    background: red;
+}
+.login_block2{
+    display: none;
+}
+.login_block3{
+    display: none;
 }
 /*СТРАНИЦА ERN.PHP*/
 .ern_text{
