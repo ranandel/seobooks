@@ -1,3 +1,4 @@
+<? include "config_register.php"; ?>
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
@@ -30,7 +31,7 @@
     </form>
         </div>
     </div>
-    <? include "config_register.php"; ?>
+
     <!--ПРАВАЯ КОЛОНКА-->
     <? include "right_block.php"; ?>
 </div>

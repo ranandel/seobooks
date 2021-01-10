@@ -1,4 +1,5 @@
-﻿<!DOCTYPE HTML>
+<?include "config_login.php"; ?>
+<!DOCTYPE HTML>
 <html lang="ru">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,7 +56,7 @@
                         <a href="login.php?do=logout">Выход</a>
                         <br><br><br>
                         <div>
-                            <?include "config_login.php"; ?>
+
                         </div>
                     </div>
                     <div id="login_block2" class="login_block2">
