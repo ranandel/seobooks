@@ -13,10 +13,10 @@
         Мы выплатили<br><span class="st">0</span> руб.
     </div>
     <!--РЕГИСТРАЦИЯ-->
-    <a href="#"><div class="reg"></div></a>
+    <a href="register.php"><div class="reg"></div></a>
     <!--ВХОД-->
     <!--onClick="showContent('login.php')"-->
-    <a href="login.php" ><div class="login"></div></a>
+    <a href="login.php"><div class="login"></div></a>
     <!--БАНЕР 100х100-->
     <div class="baner">
         <h1>Реклама (Баннер 100х100)</h1>

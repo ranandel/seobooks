@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <meta charset="utf-8">
+    <meta name="description"
+          content="Рекламодателям. Profitcentr - рекламное агентство №1. быстро, доступно, качественно! Многофункциональный сервис заданий.">
     <title>ProfiTCentR - Рекламное агентство. Эффективная раскрутка сайтов</title>
     <link rel="icon" href="/favicon.ico">
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!--КНОПКИ FIXED-->

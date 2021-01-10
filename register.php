@@ -12,19 +12,29 @@
 </head>
 <body>
 <!--КНОПКИ FIXED-->
-    <? include "fixed_button.php"; ?>
+<? include "fixed_button.php"; ?>
 <!--ШАПКА-->
-    <? include "header.php"; ?>
+<? include "header.php"; ?>
 <!--КОНТЕНТ БЛОК 3 КОЛОНКИ-->
 <div class="content_block">
-<!--ЛЕВАЯ КОЛОНКА-->
+    <!--ЛЕВАЯ КОЛОНКА-->
     <? include "left_block.php"; ?>
-<!--СРЕДНЯЯ КОЛОНКА-->
-    <? include "content_index.php"; ?>
-<!--ПРАВАЯ КОЛОНКА-->
+    <!--СРЕДНЯЯ КОЛОНКА-->
+    <div class="content" id="content">
+        <div class="name_block">
+            <h1 class="zagolovok">Вход в аккаунт</h1>
+    <form method="POST">
+        Логин <input name="login" type="text" required><br>
+        Пароль <input name="password" type="password" required><br>
+        <input name="submit" type="submit" value="Зарегистрироваться">
+    </form>
+        </div>
+    </div>
+    <? include "config_register.php"; ?>
+    <!--ПРАВАЯ КОЛОНКА-->
     <? include "right_block.php"; ?>
 </div>
 <!--ФУТЕР-->
-    <? include "footer.php"; ?>
+<? include "footer.php"; ?>
 </body>
 </html>

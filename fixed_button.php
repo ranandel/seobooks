@@ -7,8 +7,8 @@
     <img src="images/down.png">
 </div>
 <!--ЛЮДЕЙ ОНЛАЙН-->
-<div class="online" title="Сколько человек онлайн">
-    <span>1</span>
+<div id="online" title="Сколько человек онлайн">
+    <span id="people">1</span>
 </div>
 <!--ПОМОЩЬ-->
 <div class="help" >

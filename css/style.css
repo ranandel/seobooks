@@ -1,9 +1,8 @@
 body{
     margin: 0;
-
 }
 /*ЛЮДЕЙ ОНЛАЙН*/
-.online{
+#online{
     background: url(/images/online.png);
     color: #fff;
     width: 113px;
@@ -17,7 +16,7 @@ body{
     cursor: help;
     transform: rotate(270deg);
 }
-.online span{
+#people{
     margin:0;
     font-family: Arial, Tahoma, "Times New Roman", "Trebuchet MS", Impact, sans-serif;
     font-size: 23px;
@@ -81,7 +80,8 @@ body{
 }
 /*ШАПКА*/
 .header_block{
-    background-image: url(images/bg-header.png);
+
+    background-image: url(/images/bg-header.png);
     height: 120px;
     width: 100%;
     min-width: 1100px;
@@ -149,7 +149,7 @@ menu li a:hover{
 /*СТАТИСТИКА*/
 .left .statistika{
     width: 200px;
-    background-image: url(images/reg_log_bg.png);
+    background-image: url(/images/reg_log_bg.png);
     height: 40px;
     background-position: 0 -160px;
     margin-bottom: 5px;
@@ -164,7 +164,7 @@ menu li a:hover{
 }
 /*РЕГИСТРАЦИЯ*/
 .left .reg{
-   background-image: url(images/reg_log_bg.png);
+   background-image: url(/images/reg_log_bg.png);
     height: 40px;
     margin-bottom: 5px;
 }
@@ -173,10 +173,11 @@ menu li a:hover{
 }
 /*ВХОД*/
 .left .login{
-    background-image: url(images/reg_log_bg.png);
+    background-image: url(/images/reg_log_bg.png);
     height: 40px;
     background-position: 0 -80px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .left .login:hover{
     background-position: 0 -120px;
@@ -360,8 +361,8 @@ label {
     font-family: Arial;
 }
 label img{
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
 }
 label:first-child{
     background-Image:linear-gradient(to bottom, #fefefe, #eeeeee);
@@ -369,47 +370,67 @@ label:first-child{
 }
 .login_block1 table{
     width: 100%;
-    color:  #167E48;
-    font-family: Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-shadow: rgb(255, 255, 255) 0px 1px 0px, rgb(170, 170, 170) 1px 2px 2px;
 }
 .login_block1 td:first-child{
-    width: 100px;
+    width: 50px;
+}
+td{
+    color:  #114C5B;
+}
+.tx{
+    line-height: 4em;
+    font-family: Tahoma, Arial, "Times New Roman", "Trebuchet MS", Impact, sans-serif;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px, rgb(170, 170, 170) 1px 2px 2px;
+    font-size: 14px !important;
+    font-weight: 700;
 }
 .login_block1 .refresh{
     width: 16px;
     height: 16px;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 .login_block1 input{
     height: 21px;
    float: right;
-    width: 290px;
+    width: 250px;
     border: 1px solid  #D3D3D3;
     padding: 3px 5px 3px 5px;
     margin: 10px 0px 10px 0px;
+    background-color:  #F9F9F9;
 }
 .login_block1 hr{
     width: 100%;
 
-}
-.login_block1 .capcha{
-    display: flex;
-    justify-content: space-around;
-}
-.login_block1 .capcha div{
-    width: 75px;
-    height: 75px;
-    background: red;
 }
 .login_block2{
     display: none;
 }
 .login_block3{
     display: none;
+}
+
+#vopros{
+    font-size: 14px;
+    color:  #114C5B;
+    font-weight: normal;
+}
+#vxod{
+    background: #65AB34;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 0em;
+    cursor: pointer;
+    margin:0;
+}
+#vxod:hover{
+    background: #52991D;
+
+}
+#crash{
+    color: red;
 }
 /*СТРАНИЦА ERN.PHP*/
 .ern_text{
